@@ -1,0 +1,52 @@
+
+
+.footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    
+}
+
+#social_media {
+    border-spacing: 10px;
+}
+
+#fb-icon {
+    border: 3px solid #1073b0;
+}
+
+#fb-icon:hover {
+    background-color: #1073b0;
+}
+
+#yt-icon {
+    border: 3px solid #d41c1c;
+}
+
+#yt-icon:hover {
+    background-color: #d41c1c;
+}
+
+#insta-icon {
+    border: 3px solid #733bae;
+}
+
+#insta-icon:hover {
+    background-color: #733bae;
+}
+
+#twitter-icon {
+    border: 3px solid #16b4ca;
+}
+
+#twitter-icon:hover {
+    background-color: #16b4ca;
+}
+
+#crest-icon {
+    border: 3px solid green;
+}
+
+#crest-icon:hover {
+    background-color: green;
+}

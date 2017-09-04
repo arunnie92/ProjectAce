@@ -1,0 +1,42 @@
+<ion-view>
+    <ion-content>
+    
+    <div style="float:left;">
+    	<a href="#/tabs/account/settings">
+    		<button class="button icon ion-ios-gear-outline" >
+			</button>
+    	</a>
+	</div>
+	
+	<!--this button needs to turn the information into a form-->
+	<div style="float:right;">
+        <a href="#/tabs/account/information">
+        	<button class="button icon icon-right ion-ios-color-wand" >
+    		</button>
+        </a>
+	</div>
+    
+    <center>
+        <div id="rcorners2">
+        	<!-- IMAGE(S) GOES HERE -->
+        </div>
+
+        <div>
+			<p>{{hi}}</p>
+        	<!-- controller needs to check if any of these fields are empty. if not display them -->
+            <p>id: {{user._id}}</p>
+        	<p>Full Name: {{user.firstName}} 
+                {{user.information.lastName}} </p>
+        	<p>Age: {{user.information.age}}</p>
+        	<p>Zodiac: {{user.information.zodiacSign}}</p>
+        	<p>Occupation: {{user.information.occupation}}</p>
+        	<p>Employer: {{user.information.employer}}</p>
+        	<p>Degree: {{user.information.degree}}</p>
+        	<p>University: {{user.information.university}}</p>
+        	<p>Likes: {{user.information.likes[0]}}</p>
+        	<p>Dislikes: {{user.information.dislikes[0]}}</p>
+        	<p>Description: {{user.information.description}}</p>
+        </div> 
+     </center>
+    </ion-content>
+</ion-view>

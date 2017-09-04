@@ -1,0 +1,23 @@
+<ion-view>
+    <ion-content>
+        <center>
+            <div ng-repeat="user in users">
+                <input type="button" value={{user.obj.email}} 
+                    ng-click="matchStepOne({{user}})">
+            </div>
+            <br/>
+            <div ng-repeat="user in users">
+                <input type="button" value={{user.obj.email}} 
+                    ng-click="matchStepTwo({{user}})">
+            </div>
+            <!-- <div class = "row">
+                <div class = "col image">User 1 </div>
+                <div class = "col image">User 2</div>
+            </div>
+            <div class = "row">
+                <div class = "col image">User 3</div>
+                <div class = "col image">User 4</div>
+            </div> -->
+        </center>
+    </ion-content>
+</ion-view>

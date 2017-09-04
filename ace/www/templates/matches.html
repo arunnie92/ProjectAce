@@ -1,0 +1,34 @@
+<!-- Add query for match -->
+<!-- add more styling -->
+<!-- make no matches error better -->
+
+<ion-view>
+    <div class="bar bar-subheader">
+        <h2 class="title">Matches</h2>
+    </div>
+    <ion-content class="has-subheader">
+
+        <div>
+        </div>
+
+        <ion-list>
+          <ion-item class="item-thumbnail-left item-text-wrap" 
+            ng-repeat="match in items">
+                
+            <img class="match" src="{{match.image}}" alt="photo">
+            
+            <h1 ng-show="!items.length">You currently have no matches!</h1>
+            
+            <h2>{{match.fullName}}</h2>
+            
+            <h3>Matched on {{match.matchedOn.type}}</h3>
+            
+            <p class="item-icon-right">
+                <i class="icon ion-chevron-right"></i>
+            </p>
+          </ion-item>
+        </ion-list>
+
+       
+    </ion-content>
+</ion-view>

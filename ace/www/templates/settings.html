@@ -1,0 +1,57 @@
+<ion-view>
+	<ion-content>
+    
+    <form name="locationForm" novalidate>
+
+    </form>
+
+    <form name="distanceForm" novalidate>
+      <label class="item">
+        <div class="item-content">Distance</div>
+        <div class="range"> <!-- Change starting value to user value & show current value-->
+          0<input type="range" name="distance" min="0" max="100" ng-model="value" value="25">100
+        </div>
+      </label>
+    </form>
+
+    <form name="seekingForm" novalidate>
+      <label class="item item-input item-select">
+        <div class="input-label">Seeking {{user.seeking}}</div> 
+        <select ng-change="updateSeeking()">
+          <option value="male">Male</option>
+          <option value="female">Female</option
+        </select>
+      </label>
+    </form>
+
+    <form name="genderForm" novalidate>
+    </form>
+
+    <form name="logoutForm" novalidate>
+    </form>
+
+    <form name="deleteAccountForm" novalidate>
+    </form>
+
+    <!-- update age range -->
+
+
+    <div>
+    
+  </div>
+
+    <div>
+    
+    </div>
+
+    <!-- <div>
+    <label class="item">
+      <div class="item-content">Age</div>
+      <div class="range"> Change starting value to user value
+        0<input type="range" name="distance" min="18" max="100" value="25">100
+      </div>
+    </label>
+  </div> -->
+
+	</ion-content>
+</ion-view>

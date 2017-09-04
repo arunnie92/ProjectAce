@@ -1,0 +1,30 @@
+<ion-view>
+    <ion-header-bar class="bar-balanced">
+        <h1 class="title">Ace</h1>
+    </ion-header-bar>
+
+    <ion-content>
+    	<form name="loginForm" novalidate>
+        	<div class="list list-inset">
+
+                <label class="item item-input">
+                    <span class="input-label">Email</span>
+                    <input type="email" name="email" ng-model="loginModel.email" placeholder="Email">
+                </label>
+
+                <label class="item item-input">
+                    <span class="input-label">Password</span>
+                    <input type="text" name="password" ng-model="loginModel.password" placeholder="Password">
+                </label>
+
+               <button type="submit" class="button button-block button-balanced"
+                ng-click="login()">Login</button>
+            </div>
+           <input type="button" value="register" ng-click="toRegister()">
+           <input type="button" value="forgot password?" 
+            ng-click="forgotPassword()">
+        </form>
+
+
+    </ion-content>
+</ion-view>

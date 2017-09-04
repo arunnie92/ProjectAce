@@ -1,0 +1,85 @@
+$ionicPopup.alert({
+              title: 'Success',
+              content: 'Hello World!!!'
+            }).then(function(res) {
+              console.log('Test Alert Box');
+            });
+
+// EDIT 
+		$cordovaGeolocation
+        .getCurrentPosition({enableHighAccuracy: false})
+        .then(function (position) {
+          var lng = position.coords.longitude
+          var lat = position.coords.latitude
+          var data = {
+            "lng" : lng,
+            "lat" : lat,
+          };
+          //$rootScope.user.coordinates = [lng, lat];
+          //console.log($rootScope.user.coordinates);
+
+          $http({
+            method: 'PUT',
+            url: 'http://localhost:4000/REST/users/login',
+            data: data,
+            headers: {
+                'Content-Type': 'application/json; charset=utf-8'
+            }
+          }).then(function (response) {
+            console.log('logged in');
+            $state.go('tabs.main');
+          }, function (reason) {
+            console.log(reason.data);
+          });
+
+        }, function(error) {
+          console.log(error);
+        });
+
+$http({
+        method: 'GET',
+        url: 'http://localhost:4000/REST/users/58bc0601be69061e2c8d28ad'
+    }).then(function mySuccess(response) {
+        $rootScope.user = response.data;
+        //console.log(response.data);
+    }, function myError(reason) {
+        console.log(reason.data);
+    });
+
+
+/*gender : req.body.gender,
+            seeking : req.body.seeking,
+            agePreference : {
+                minAge : req.body.minAge,
+                maxAge : req.body.maxAge
+            },
+            information : {
+                fullName : req.body.fullName,
+                age : parseInt(req.body.age, 10),
+                zodiacSign : req.body.zodiacSign,
+                occupation : req.body.occupation,
+                employer : req.body.employer,
+                degreee : req.body.degree,
+                university: req.body.university,
+                likes : req.body.likes,
+                dislikes : req.body.dislikes,
+                description : req.body.description
+            },
+            maxDistance : (parseInt(req.query.maxDistance, 10) * 1609.344),
+            coordinates : 
+                [
+                    parseFloat(req.body.lng),
+                    parseFloat(req.body.lat)
+                ]*/
+
+
+    <form>
+      <div class="list" style="margin-left: 100px; margin-right: 100px;">
+        <div class="item item-input-inset">
+          <label class="item-input-wrapper" style="background-color: white">
+            <input type="text" placeholder="New Message" ng-model="chat.message" >
+          </label>
+          <button class="button button-balanced" ng-click="sendMessage(message)">Send</button>
+        </div>
+      </div>
+    </form>

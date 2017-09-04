@@ -1,0 +1,89 @@
+<ion-view>
+    <ion-content>
+        <form>
+    		<div class="list list-inset">
+
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">First Name</span>
+                    <input type="text" name="firstName" 
+                        ng-model="informationModel.firstName" 
+                            placeholder="Your First Name">
+                </label>
+
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Middle Name</span>
+                    <input type="text" name="middleName" 
+                        ng-model="informationModel.middleName" 
+                            placeholder="Your Middle Name">
+                </label>
+
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Last Name</span>
+                    <input type="text" name="lastName" 
+                        ng-model="informationModel.lastName" 
+                            placeholder="Your Last Name">
+                </label>
+
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Age</span>
+                    <input type="number" name="age" 
+                        ng-model="informationModel.age" 
+                            placeholder="#">
+                </label>
+
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Astrologcial/Zodiac Sign</span>
+                    <input type="text" name="zodiacSign" 
+                        ng-model="informationModel.zodiacSign" 
+                            placeholder="Sign">
+                </label>
+
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Whats your ethnicity?</span>
+                    <input type="text" name="ethnicity" 
+                        ng-model="informationModel.ethnicity" 
+                            placeholder="University">
+                </label>
+
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Whats your Occupation?</span>
+                    <input type="text" name="occupation" 
+                        ng-model="informationModel.occupation" 
+                            placeholder="Occupation">
+                </label>
+
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Whos your employer?</span>
+                    <input type="text" name="employer" 
+                        ng-model="informationModel.employer" 
+                            placeholder="employer">
+                </label>
+
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Where did you attend University?</span>
+                    <input type="text" name="university" 
+                        ng-model="informationModel.university" 
+                            placeholder="University">
+                </label>
+
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">What was your major?</span>
+                    <input type="text" name="major" 
+                        ng-model="informationModel.major" 
+                            placeholder="University">
+                </label>
+
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Please tell us more about yourself, don't be shy!!</span>
+                    <textarea name="description" 
+                        ng-model="informationModel.description" 
+                            placeholder="Description"></textarea>
+                </label>
+
+                <button type="submit" ng-click="updateInformation()"
+                    class="button button-block button-balanced">Submit
+                </button>
+			</div>  
+        </form>
+    </ion-content>    
+</ion-view>

@@ -1,0 +1,32 @@
+<ion-view>
+    <ion-content>
+        <form name="genderSeekingForm" novalidate>
+    		<div class="list list-inset">
+
+                <!-- FIX HOW THIS LOOKS -->
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Whats Your Gender?</span>
+                    <select name="gender" 
+                        ng-model="genderModel.gender" ng-required="true">
+                        <option value="male">Male</option>
+                        <option value="female">Female</opition>
+                    </select>
+                </label>
+
+                <!-- FIX HOW THIS LOOKS -->
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Who are seeking?</span>
+                    <select name="seeking" 
+                        ng-model="seekingModel.seeking" ng-required="true">
+                        <option value="male">Male</option>
+                        <option value="female">Female</opition>
+                    </select>
+                </label>
+
+                <button type="submit" class="button button-block button-balanced" 
+                    ng-show="genderSeekingForm.gender.$valid && genderSeekingForm.seeking.$valid"
+                    ng-click="updateGenderAndSeeking()">Submit</button>
+			</div>  
+        </form>
+    </ion-content>
+</ion-view>

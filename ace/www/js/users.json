@@ -1,0 +1,134 @@
+[
+  {
+    "_id": "58d7255cdcedc51e79affb1c",
+    "email": "estellebrown@dyno.com",
+    "password": "password",
+    "gender": "female",
+    "seeking": "female",
+    "agePreference": {
+      "minAge": 18,
+      "maxAge": 50
+    },
+    "maxDistance": 30,
+    "coordinates": [
+      8.57361,
+      -109.795101
+    ],
+    "information": {},
+    "matches": {
+      "matchId": "58d7255cecab3413675b9547",
+      "matchedOn": "2016-03-27T02:05:42 +04:00"
+    },
+    "joinedOn": "2016-04-17T01:31:30 +04:00"
+  },
+  {
+    "_id": "58d7255c9f47dd5624605fb4",
+    "email": "estellebrown@dyno.com",
+    "password": "password",
+    "gender": "female",
+    "seeking": "female",
+    "agePreference": {
+      "minAge": 18,
+      "maxAge": 50
+    },
+    "maxDistance": 35,
+    "coordinates": [
+      -43.697868,
+      -56.006104
+    ],
+    "information": {},
+    "matches": {
+      "matchId": "58d7255c0e2553d43eb838eb",
+      "matchedOn": "2014-10-31T04:15:14 +04:00"
+    },
+    "joinedOn": "2014-01-18T07:55:22 +05:00"
+  },
+  {
+    "_id": "58d7255c906584195df8d14b",
+    "email": "estellebrown@dyno.com",
+    "password": "password",
+    "gender": "female",
+    "seeking": "female",
+    "agePreference": {
+      "minAge": 18,
+      "maxAge": 50
+    },
+    "maxDistance": 23,
+    "coordinates": [
+      -41.749639,
+      30.473523
+    ],
+    "information": {},
+    "matches": {
+      "matchId": "58d7255c0cb1d2e6d51da9d3",
+      "matchedOn": "2017-03-14T12:35:41 +04:00"
+    },
+    "joinedOn": "2014-07-03T09:14:25 +04:00"
+  },
+  {
+    "_id": "58d7255c7204ecbf12725d89",
+    "email": "estellebrown@dyno.com",
+    "password": "password",
+    "gender": "female",
+    "seeking": "female",
+    "agePreference": {
+      "minAge": 18,
+      "maxAge": 50
+    },
+    "maxDistance": 38,
+    "coordinates": [
+      6.481939,
+      -58.457214
+    ],
+    "information": {},
+    "matches": {
+      "matchId": "58d7255c23fcf6f8b8a952a2",
+      "matchedOn": "2016-10-19T03:56:21 +04:00"
+    },
+    "joinedOn": "2015-05-10T05:22:22 +04:00"
+  },
+  {
+    "_id": "58d7255c5377015be34542f4",
+    "email": "estellebrown@dyno.com",
+    "password": "password",
+    "gender": "female",
+    "seeking": "female",
+    "agePreference": {
+      "minAge": 18,
+      "maxAge": 50
+    },
+    "maxDistance": 27,
+    "coordinates": [
+      -42.707918,
+      20.349462
+    ],
+    "information": {},
+    "matches": {
+      "matchId": "58d7255cc1279ad98257f465",
+      "matchedOn": "2014-05-21T12:47:04 +04:00"
+    },
+    "joinedOn": "2015-04-23T11:25:48 +04:00"
+  },
+  {
+    "_id": "58d7255c8b46604bf99236f8",
+    "email": "estellebrown@dyno.com",
+    "password": "password",
+    "gender": "female",
+    "seeking": "female",
+    "agePreference": {
+      "minAge": 18,
+      "maxAge": 50
+    },
+    "maxDistance": 20,
+    "coordinates": [
+      -75.857864,
+      76.354182
+    ],
+    "information": {},
+    "matches": {
+      "matchId": "58d7255ce04e3026f3b22acc",
+      "matchedOn": "2014-02-28T10:56:29 +05:00"
+    },
+    "joinedOn": "2016-07-25T08:37:35 +04:00"
+  }
+]

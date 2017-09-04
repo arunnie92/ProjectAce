@@ -1,0 +1,36 @@
+<ion-view>
+    <ion-content>
+        <form name="registerForm" novalidate>
+    		<div class="list list-inset">
+                <p>Please enter your desired Email & Password</p>
+                
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Email</span>
+                    <input type="email" name="email" ng-model="registerModel.email" ng-required="true" 
+                        placeholder="email@email.com">
+                </label>
+                <p ng-show="registerForm.email.$invalid && registerForm.email.$touched">
+                    You must provide a valid email.
+                </p>
+                
+
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Password</span>
+                    <input type="password" name="password" 
+                        ng-model="registerModel.password" ng-minlength="6" ng-required="true" 
+                            placeholder="password">
+                </label>
+                <p ng-show="registerForm.password.$invalid && registerForm.password.$touched">
+                    You must provide a valid password of 6 characters.
+                </p>
+
+                <button type="submit" ng-click="register()" 
+                    class="button button-block button-balanced"
+                    ng-show="registerForm.email.$valid && registerForm.password.$valid">
+                    Register
+                </button>
+
+			</div>  
+        </form>
+    </ion-content>
+</ion-view>

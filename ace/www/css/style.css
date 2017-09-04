@@ -1,0 +1,26 @@
+/* Empty. Add your own CSS if you like */
+
+
+.image{
+    border: 1px solid black;
+}
+
+#rcorners2 {
+    border-radius: 25px;
+    border: 2px solid #33cd5f;
+    padding: 20px; 
+    width: 200px;
+    height: 150px; 
+    margin-top: 20px;
+}
+
+/*
+.bar-balanced, .tabs-balanced>tabs {
+background-color: #      !importnat;
+border-color: #    ;
+}
+*/
+
+.match {
+    border-radius: 25px;
+}
